@@ -7,7 +7,7 @@ $idade = 31;
 $altura = 1.69;
 
 echo "Exercício 1: \n";
-echo "Meu nome é $nome, tenho $idade anos e minha altura é $altura metros. \n";
+echo "Meu nome é " . $nome . ", tenho " . $idade . " anos e minha altura é " . $altura . " metros. \n";
 echo "\n";
 
 echo "----------------------------------------------------------------\n";
@@ -224,7 +224,7 @@ $preco = 3500.99;
 
 echo "Exercício 12: \n";
 
-echo "o produto $produto custa R$ $preco \n";
+echo "o produto $produto custa: R$ $preco \n";
 echo "\n";
 echo 'O produto ' . $produto . ' custa: R$ ' . $preco . "\n";
 echo "\n";
