@@ -157,3 +157,93 @@ for ($i = 0; $i < 15; $i++) {
 
 echo "\n";
 echo "-------------------\n";
+
+//Exercicio 11
+
+$notas = [8.5, 6.0, 9.2, 7.8, 5.5];
+$soma = 0;
+
+echo "Exercicio 11 \n";
+
+
+foreach ($notas as $nota){
+    $soma += $nota;
+}
+
+$media = $soma / count($notas);
+echo "Média :". number_format($media, 2). "\n";
+
+echo "\n";
+echo "-------------------\n";
+
+//Exercicio 12
+
+$valores = [34, 12, 89, 3, 56, 71, 23];
+$maior = $valores [0];
+$menor = $valores [0];
+
+echo "Exercicio 12 \n";
+
+foreach ($valores as $valor){
+    if ($valor > $maior){
+        $maior = $valor;
+        echo "O maior número é: $maior \n";
+    }
+    if ($valor < $menor) {
+        $menor = $valor;
+    }
+}
+
+echo "O menor número é: $menor \n";
+
+echo "\n";
+echo "-------------------\n";
+
+//Exercicio 13
+
+$original = "PHP é legal!";
+$invertido = "";
+
+echo "Exerício 13 \n";
+
+for ($i = 0; isset($original[$i]); $i++){
+
+    $invertido = $original[$i] . $invertido;
+}
+
+echo $invertido. "\n";
+
+echo "\n";
+echo "-------------------\n";
+
+//Exercicio 14
+
+// $primos = 0;
+
+echo "Exercício 14 \n";
+
+for ($i = 2; $i <= 50; $i++) {
+    $primo = true;
+
+    for ($j = 2; $j < $i; $j++){
+        $primo = ($i % $j == 0) ? false : $primo;    
+    }
+
+    echo $primo ? "$i é primo \n" : "";
+    
+}
+
+echo "\n";
+echo "-------------------\n";
+
+//Exercício 15
+
+$aluno = ["Nome" => "Maria", "Idade" => 22, "Curso" => "Engenharia", "Média" => 8.7];
+
+echo "Exercício 15 \n";
+
+foreach ($aluno as $chave => $valor) {
+    echo "$chave: $valor \n";
+}
+
+
