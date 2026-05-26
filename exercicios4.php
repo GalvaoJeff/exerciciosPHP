@@ -30,18 +30,23 @@ echo "------------------------------\n";
 
 //Exerício 3
 
-$string1 = "programaçãao web";
+$string1 = "programação web";
+$string2 = "curso de desenvolvimento web";
 
 echo "Exercício 3: \n";
 
-echo strtoupper($string1[1]) . "\n";
+echo ucfirst($string1) . "\n";
+echo ucwords($string2) . "\n";
+
+echo "\n";
+echo "------------------------------\n";
 
 //Exerício 4
 
 $extrair = "abcdefghij";
 $i = 0;
 
-echo "Exercício 3: \n";
+echo "Exercício 4: \n";
 
 function exibir($string, $posicao) {
     return substr($string, $posicao, 1);
@@ -74,7 +79,7 @@ while (strlen($extrair) > 0 && $i <= 10) {
 
 // Outra forma de fazer o exercício 4
 
-echo "outro jeito de fazer o exercício 3: \n";
+echo "outro jeito de fazer o exercício 4: \n";
 
 $extrair = "abcdefghij";
 
@@ -87,3 +92,72 @@ echo "------------------------------\n";
 
 //Exerício 5
 
+$string = "O rato roeu a roupa do rei de Roma";
+
+echo "Exercício 5: \n";
+
+echo strpos($string, "roupa") . "\n";
+echo count(explode("r", $string)) . "\n";
+
+echo "\n";
+echo "------------------------------\n";
+
+//Exerício 6
+
+$texto = "Eu gosto de Java";
+$texto2 = "Eu gosto de JAVA e java";
+
+echo "Exercício 6: \n";
+
+echo $texto = str_replace("Java", "PHP", $texto) . "\n";
+echo $texto2 = str_ireplace("Java", "PHP", $texto2) . "\n";
+
+
+echo "\n";
+echo "------------------------------\n";
+
+//Exerício 7
+
+$string = " Olá, Mundo! ";
+
+echo "Exercício 7: \n";
+
+echo trim($string) . "\n";
+echo ltrim($string) . "\n";
+echo rtrim($string) . "\n";
+
+echo "\n";
+echo "------------------------------\n";
+
+//Exerício 8
+
+echo str_repeat("-", 40) . "\n";
+echo str_repeat("*", 20) . "\n";
+
+echo "\n";
+echo "------------------------------\n";
+
+//Exerício 9
+
+$string = "arara";
+
+
+echo strrev ("Hello World!") . "\n";
+
+function ePalindromo($string) {
+    $string = strtolower(str_replace(" ", "", $string));
+    return $string == strrev($string);
+}
+
+echo ePalindromo($string) ? $string ."É um palíndromo" : "Não é um palíndromo";
+
+
+echo "\n";
+echo "------------------------------\n";
+
+//Exerício 10
+
+echo substr_count("banana", "na") . "\n";
+echo substr_count("banana", "a") . "\n";
+
+echo "Fim dos exercícios!";
