@@ -97,7 +97,7 @@ $string = "O rato roeu a roupa do rei de Roma";
 echo "Exercício 5: \n";
 
 echo strpos($string, "roupa") . "\n";
-echo count(explode("r", $string)) . "\n";
+echo strrpos($tring, "r") . "\n";
 
 echo "\n";
 echo "------------------------------\n";
@@ -157,7 +157,7 @@ echo "------------------------------\n";
 
 //Exerício 10
 
-echo substr_count("banana", "na") . "\n";
+echo substr_count("banana", "ana") . "\n";
 echo substr_count("banana", "a") . "\n";
 
 echo "Fim dos exercícios!";

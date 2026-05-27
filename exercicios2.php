@@ -287,7 +287,7 @@ function eTriangulo($a, $b, $c) {
 if (eTriangulo($lado1, $lado2, $lado3)) {
     echo "Os lados formam um triângulo.";
 } else {
-    echo "Os lados não formam um triângulo.";
+    echo "Os lados não formam um triângulo. \n";
 }
 
 echo "\n";
