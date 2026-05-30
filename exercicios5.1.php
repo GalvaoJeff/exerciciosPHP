@@ -142,6 +142,51 @@ echo "------------------------------\n";
 
 //Exercícios 10:
 
-
+$turmaA = ["Ana", "Carlos", "Bruno"];
+$turmaB = ["Diana", "Eduardo", "Fernanda"];
 
 echo "Exercícios 10: \n";
+
+$turmaMerge = array_merge($turmaA, $turmaB);
+print_r($turmaMerge);
+
+echo "\n";
+echo "------------------------------\n";
+
+//Exercício 11:
+
+$tags = ["php", "html", "css", "php", "javascript", "html", "css", "python"];
+
+echo "Exercício 11: \n";
+
+$noDuplicates = array_unique(array_values($tags));
+
+print_r($noDuplicates);
+
+echo "\n";
+echo "------------------------------\n";
+
+//Exercício 12:
+
+$fila = ["primeiro", "segundo", "terceiro", "quarto", "quinto"];
+
+echo "Exercício 12: \n";
+
+$reverse = array_reverse($fila);
+print_r($reverse);
+
+
+function reverse (){
+    $fila2 = ["primeiro", "segundo", "terceiro", "quarto", "quinto"];
+    $contrario = [];
+    for($i = count($fila2) -1; $i >= 0; $i--){
+        $contrario[] = $fila2 [$i];
+        
+    }
+    
+    return $contrario;
+}
+
+print_r(reverse());
+
+echo "Fim dos Exercícios";
