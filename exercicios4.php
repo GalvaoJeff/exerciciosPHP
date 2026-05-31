@@ -97,7 +97,7 @@ $string = "O rato roeu a roupa do rei de Roma";
 echo "Exercício 5: \n";
 
 echo strpos($string, "roupa") . "\n";
-echo strrpos($tring, "r") . "\n";
+echo strrpos($string, "r") . "\n";
 
 echo "\n";
 echo "------------------------------\n";
